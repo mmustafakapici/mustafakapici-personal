@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  /* globals.css */
+
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 220 13% 13%; /* Dark Gray */
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 13%;
+    --primary: 210 50% 50%; /* Blue */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 180 50% 50%; /* Teal */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 75%;
+    --muted-foreground: 220 13% 13%;
+    --accent: 300 50% 50%; /* Purple */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 100% 50%; /* Red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 80%;
+    --input: 0 0% 90%;
+    --ring: 220 90% 60%;
+    --chart-1: 200 100% 50%;
+    --chart-2: 120 100% 40%;
+    --chart-3: 60 100% 50%;
+    --chart-4: 300 100% 50%;
+    --chart-5: 0 100% 50%;
+    --radius: 8px; /* Adjust as needed */
+  }
+
+  .dark {
+    --background: 220 13% 13%; /* Dark Gray */
+    --foreground: 0 0% 100%; /* White */
+    --card: 220 13% 13%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 13% 13%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 210 50% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 180 50% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 13% 13%;
+    --muted-foreground: 0 0% 100%;
+    --accent: 300 50% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 13%;
+    --input: 220 13% 13%;
+    --ring: 0 0% 100%;
+    --chart-1: 200 100% 50%;
+    --chart-2: 120 100% 40%;
+    --chart-3: 60 100% 50%;
+    --chart-4: 300 100% 50%;
+    --chart-5: 0 100% 50%;
+    --radius: 8px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
